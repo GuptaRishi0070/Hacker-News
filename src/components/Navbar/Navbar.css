@@ -1,0 +1,168 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff6600;
+  padding: 10px 20px;
+  color: white;
+  height: auto;
+  height: 40px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  background-color: #fff;
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  color: #000;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 5px 10px;
+  width: 77%;
+  height: 32px !important;
+}
+
+.search-icon {
+  color: #ff6600;
+  margin-right: 8px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+}
+
+.search-powered-by {
+  font-size: 12px;
+  color: #888;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.algolia-logo {
+  width: 60px;
+  height: auto;
+  margin-left: 4px;
+}
+
+.navbar-settings .settings-icon {
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.SearchHeader_logo {
+  flex: 1 0 180px;
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.SearchHeader_logo img {
+  width: 48px;
+  margin-right: 8px;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.SearchHeader_label {
+  color: #000;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.SearchHeader_label a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar-left {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar-title {
+    font-size: 14px;
+  }
+
+  .navbar-search {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 5px;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+    padding: 2px 6px;
+  }
+
+  .navbar-title {
+    font-size: 13px;
+  }
+
+  .navbar-search {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .search-icon {
+    margin: 0 0 8px 0;
+  }
+
+  .search-powered-by {
+    font-size: 10px;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .navbar-settings .settings-icon {
+    font-size: 16px;
+  }
+
+  .SearchHeader_logo img {
+    width: 36px;
+    margin-right: 6px;
+  }
+
+  .SearchHeader_label {
+    font-size: 16px;
+  }
+}
