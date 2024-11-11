@@ -1,0 +1,89 @@
+
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6ef;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.filter-bar select {
+  margin: 0 8px;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.result-count {
+  margin-left: auto;
+  font-size: 14px;
+  color: #666;
+}
+
+.share-icon {
+  margin-left: 10px;
+  color: #666;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-wrap: wrap;
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+
+  .filter-bar select {
+    font-size: 13px;
+    padding: 3px;
+    margin: 4px;
+    width: 100%;
+  }
+
+  .result-count {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-size: 13px;
+  }
+
+  .share-icon {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-bar {
+    padding: 5px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-bar span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .filter-bar select {
+    font-size: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .result-count {
+    font-size: 12px;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+  }
+
+  .share-icon {
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
